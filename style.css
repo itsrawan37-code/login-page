@@ -229,3 +229,23 @@ button:hover {
     transform: translateY(-85%) scale(1.2);
     color: #666;
 }
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .left {
+        height: 250px;
+    }
+
+    form {
+        width: 90%;
+        margin: auto;
+    }
+
+}
