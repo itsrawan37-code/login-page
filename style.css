@@ -229,30 +229,9 @@ button:hover {
     transform: translateY(-85%) scale(1.2);
     color: #666;
 }
-@media (max-width: 768px) {
 
-    .container {
-        display: block;
-    }
-
-    .left,
-    .right {
-        width: 100%;
-        position: static;
-    }
-
-    .overlay-content {
-        position: static;
-        padding: 20px;
-        text-align: center;
-    }
-
-    form {
-        position: static;
-        width: 90%;
-        margin: 20px auto;
-    }
 }
+
 
 
 
