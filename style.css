@@ -246,6 +246,12 @@ button:hover {
     .right {
         padding: 20px;
     }
-
+.overlay-content {
+    position: static;
+    {
+    .password-container {
+        position: static
+    }
 }
+
 
