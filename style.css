@@ -232,26 +232,27 @@ button:hover {
 @media (max-width: 768px) {
 
     .container {
-        flex-direction: column;
+        display: block;
     }
 
     .left,
     .right {
         width: 100%;
+        position: static;
     }
 
-    .left {
-        height: 250px;
-    }
-    .right {
+    .overlay-content {
+        position: static;
         padding: 20px;
+        text-align: center;
     }
-.overlay-content {
-    position: static;
-    {
-    .password-container {
-        position: static
+
+    form {
+        position: static;
+        width: 90%;
+        margin: 20px auto;
     }
 }
+
 
 
