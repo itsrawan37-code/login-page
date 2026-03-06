@@ -7,24 +7,13 @@ body {
     font-family: 'Cairo', sans-serif;
     height: 100vh;
 }
-.container {
-    display: flex;
-    flex-direction: row-reverse;
-   min-height: 100vh;
-}
-/* الصورة */
-.left {
-    width: 50%;
-}
+
 .left img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
 }
-
-/* الجزء بتاع الفورم */
-.right {
-    width: 50%;
+right{
     background: linear-gradient(to bottom right, #5a0000, #b30000, #ff1a1a);
 color: white;
     display: flex;
@@ -32,7 +21,6 @@ color: white;
     align-items: center;
     flex-direction: column;
 }
-
 .right h1 {
     color: white;
     font-size: 28px;
@@ -45,7 +33,6 @@ form {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    width: 50%;
     direction: rtl;
 }
 input:not([type="checkbox"]) {
@@ -216,7 +203,7 @@ button:hover {
     border-radius: 20px;
     cursor: pointer;
 }
-    .password-container i {
+.password-container i {
     position: absolute;
     left: 15px; 
     top: 50%;
@@ -229,9 +216,148 @@ button:hover {
     transform: translateY(-85%) scale(1.2);
     color: #666;
 }
-
+ form label {
+font-weight: 600;
+}
+h2 {
+    font-weight: bold;
+}
+.form-control {
+    border: none;
+    padding: 10px 15px;
+}
+.form-control:focus {
+    box-shadow: none;
+    border: none;
+}
+.btn-light {
+    font-weight: 600;
+}
+.overlay-text {
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
+.overlay-text h4 {
+    font-weight: 600;
+}
+.eye-icon {
+    top: 70%;
+    left: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+.signup-page .terms-check {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    direction: rtl;
+}
+.signup-page .terms-check input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+.signup-page .terms-check input[type="checkbox"]:checked::after {
+    content: "✔";
+    font-size: 14px;
+    color: #a00000; 
+    position: absolute;
+    top: -3px;
+    right: 2px;
+}
+.signup-page .terms-check label {
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+}
+.signup-page hr {
+    border: none;
+    height: 2px;
+    background: #ffffff;
+    opacity: 1;
+}
+.social-btn.facebook i {
+    background: #1877f2;
+    color: white;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
 
+.image-section img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
 
+::placeholder {
+    color: #bbbbbb;
+}
+.gender-select{
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 16px;
+    outline: none;
+    margin-top: 10px;
+    
+    direction: rtl;
+    padding-left: 35px;
 
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23888' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+    background-size: 16px;
+}
+.gender-select:focus{
+    border-color: #8a2be2;
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.2);
+    outline: none;
+}
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.row{
+    flex-direction: row-reverse;
+}
+.lines {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.lines span {
+    width: 40px;
+    height: 3px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 2px;
+}
+.back-btn {
+    padding: 8px 20px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
